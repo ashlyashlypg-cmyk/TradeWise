@@ -1,0 +1,186 @@
+body {
+    background-color:bisque;
+    color:#1f2937;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40x;
+}
+h1{
+    color: #123b6d;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+h2 {
+    color: #123b6d;
+    margin-top: 30px;
+}
+
+p{
+    color: black;
+}
+button {
+    background-color:aquamarine;
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid;
+    padding-bottom: 15 px;
+}
+header h2{
+    color:rgb(9, 6, 1);
+}
+nav a {
+    color: blue;
+    text-decoration: none;
+    margin: left 20px;
+}
+main{
+    margin-top: 35px;
+}
+.balance-card {
+    background-color:bisque;
+    padding:20px;
+    border-radius: 12px;
+    margin: 25px 0;
+}
+.balance-card p {
+    color:black;
+    font-size: 28px;
+    font-weight: bold;
+}
+.stock-container {
+    display: flex;
+    gap:20px;
+    flex:1;
+}
+.stock-card {
+    background-color:blanchedalmond;
+    padding:20px;
+    border-radius: 12px;
+    border: 1px solid #e1e7ef;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+     margin: 15px 0;
+    flex:1;
+    min-width:180px;
+}
+.stock-card button {
+    width:100%;
+}
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px 3px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+
+/* Buy button */
+button[id^="reliance"],
+button[id="tcs"],
+button[id="infosys"] {
+    background-color: #16a34a;
+    color: white;
+}
+
+/* Sell buttons */
+button[id^="sell"] {
+    background-color: #dc2626;
+    color: white;
+}
+
+/* Button hover effect */
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+    transition: 0.2s;
+}
+
+/* Welcome section */
+.hero {
+    background: linear-gradient(135deg, #10233f, #1e4976);
+    color: white;
+    padding: 55px 35px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.hero-tagline {
+    color: #6ee7a8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    color: white;
+    text-align: left;
+    font-size: 38px;
+    max-width: 650px;
+    margin: 20px 0;
+}
+
+.hero-description {
+    color: #d1dbea;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+.hero button {
+    background-color: #16a34a;
+    color: white;
+    font-weight: bold;
+    padding: 13px 22px;
+    margin: 15px 0;
+}
+
+.hero-note {
+    color: #b7c8dc;
+    font-size: 13px;
+}
+
+.portfolio-summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.summary-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e1e7ef;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.summary-card h3 {
+    color: #526174;
+    font-size: 14px;
+}
+
+.summary-card p {
+    color: #123b6d;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media (max-width: 650px) {
+    .portfolio-summary {
+        grid-template-columns: 1fr;
+    }
+}

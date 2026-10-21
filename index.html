@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeWise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+    <p class="hero-tagline">LEARN. PRACTICE. GROW.</p>
+
+    <h1>Your trading journey starts here.</h1>
+
+    <p class="hero-description">
+        Practice buying and selling stocks with virtual money.
+        Learn how trades affect your balance and portfolio,
+        without risking real money.
+    </p>
+
+    <button onclick="document.getElementById('stocks').scrollIntoView({behavior: 'smooth'})">
+        Start Trading →
+    </button>
+
+    <p class="hero-note">
+        Virtual balance · Practice trades · Portfolio tracking
+    </p>
+</section>
+
+    <header>
+    <h2>TradeWise</h2>
+    <nav>
+        <a href="#stocks">Dashboard</a>
+        <a href="#portfolio">My Portfolio</a>
+        <a href="#history">Trade History</a>
+    </nav>
+</header>
+    <main>
+        <h1>Your Trading Dashboard</h1>
+        <p> Practice trading with virtual money.</p>
+
+        <section class="balance-card">
+            <h3> Available Balance</h3>
+            <p id="balance">₹85,000.00</p>
+        </section>
+        <h2> Popular Stocks</h2>
+
+        <section id="stocks" class="stock-container">
+            <div class="stock-card">
+            <h3> Reliance Industries</h3>
+            <p>₹1,450.00</p>
+
+            <label for="reliancequantity">Quantity:</label>
+            <input type="number" id="reliancequantity" value="1" min="1">
+            <button id="reliance">Buy</button>
+            <button id="sellreliance" >Sell</button>
+        </div>
+        <div class="stock-card">
+            <h3> Tata consultancy Services </h3>
+            <p>₹3,200.00</p>
+            <label for ="tcsquantity">quantity</label>
+            <input type="number" id="tcsquantity" value="1" min="1">
+
+            <button id="tcs"> Buy</button>
+            <button id="selltcs">Sell</button>
+            </div>
+            <div class="stock-card">
+                <h3>Infosys </h3>
+                <p> ₹1,500.00 </p>
+                <label for="infosysquantity" >quantity</label>
+                <input type="number" id="infosysquantity" value="1" min="1">
+                <button id="infosys"> Buy</button>
+                <button id="sellinfo">Sell</button>
+            </div>
+        </section>
+        <section id ="portfolio" class="portfolio-section">
+            <h2> My Portfolio</h2>
+
+            <p> Reliance shares owned: <span id= "relianceowned">0</span></p>
+            <p> TCS shares owned: <span id="tcsowned">0</span></p>
+            <p> Infosys shares owned: <span id="infosysowned">0</span></p>
+
+        </section>
+        <section id="history" class="history-section">
+            <h2> Trade History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stock</th>
+                        <th>Action</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tradeHistory">
+
+                </tbody>
+            </table>
+        </section>
+        </main>
+    <script src="script.js"></script>
+</body>
+</html>
